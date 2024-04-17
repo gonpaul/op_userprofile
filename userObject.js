@@ -1,4 +1,4 @@
-const generateId = (email) => {
+const generateId = () => {
     // Implementation of generateId function
     // For example, using a hash function and modulo operator
     for (let i = 1; i < 1000000; ++i) {
