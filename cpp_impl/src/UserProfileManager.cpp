@@ -1,6 +1,9 @@
 #include "../include/UserProfileManager.h"
 #include <algorithm>
 
+// Define the static member variable users
+std::vector<UserInfo> UserProfileManager::users;
+
 void UserProfileManager::addUser(const std::string& name, const std::string& email) {
     int id = users.empty() ? 1 : users.back().id + 1;
     users.push_back({ id, name, email });
